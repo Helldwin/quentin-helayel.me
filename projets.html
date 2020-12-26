@@ -1,37 +1,90 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html dir="ltr" lang="fr-FR">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quentin HELAYEL | Projets</title>
-<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
-<script src="https://kit.fontawesome.com/af5debc70e.js" crossorigin="anonymous"></script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="Quentin HELAYEL" content="Portfolio" />
+
+<!-- Stylesheets
+      ============================================= -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Poppins:300,400,500,600,700|PT+Serif:400,400i&display=swap" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+<link rel="stylesheet" href="css/dark.css" type="text/css" />
+<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+<link rel="stylesheet" href="css/animate.css" type="text/css" />
+<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+<link rel="stylesheet" href="css/custom.css" type="text/css" />
 <link href="css/timeline.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Document Title
+      ============================================= -->
+<title>Quentin HELAYEL | Projets</title>
 </head>
 
-<body style="padding-top: 70px">
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark"> <a class="navbar-brand" href="#">Quentin HELAYEL</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active"> <a class="nav-link" href="index.html">Accueil</a> </li>
-      <li class="nav-item active"> <a class="nav-link" href="projets.html">Projets</a> </li>
-    </ul>
-  </div>
-</nav>
-<div class="container">
+<body class="stretched">
+
+<!-- Document Wrapper
+      ============================================= -->
+<div id="wrapper" class="clearfix"> 
+  
+  <!-- Header
+          ============================================= -->
+  <header id="header" class="full-header transparent-header" data-sticky-class="not-dark">
+    <div id="header-wrap">
+      <div class="container">
+        <div class="header-row"> 
+          
+          <!-- Logo
+                          ============================================= -->
+          <div id="logo"> <a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a> <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a> </div>
+          <!-- #logo end -->
+          
+          <div id="primary-menu-trigger">
+            <svg class="svg-trigger" viewBox="0 0 100 100">
+              <path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path>
+              <path d="m 30,50 h 40"></path>
+              <path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path>
+            </svg>
+          </div>
+          
+          <!-- Primary Navigation
+                          ============================================= -->
+          <nav class="primary-menu">
+            <ul class="menu-container">
+              <li class="menu-item"> <a class="menu-link" href="index.html">
+                <div>Accueil</div>
+                </a> </li>
+              <li class="menu-item"> <a class="menu-link" href="projets.html">
+                <div>Projets</div>
+                </a> </li>
+            </ul>
+          </nav>
+          <!-- #primary-menu end --> 
+          
+        </div>
+      </div>
+    </div>
+    <div class="header-wrap-clone"></div>
+  </header>
+  <!-- #header end --> 
+  
+  <!-- Content
+          ============================================= -->
+  <section id="content">
+    <div class="content-wrap">
+      <div class="container">
   <div class="page-header">
-    <h1 id="timeline">Mes Projets</h1>
-  </div>
-  <hr>
+    <h1 class="center" id="timeline">Mes Projets</h1>
+	  <div class="divider divider-rounded divider-center"><i class="icon-pen"></i></div>  
   <ul class="timeline">
-    <li class="timeline">
-      <div class="timeline-badge warning"><i class="fas fa-clock"></i></div>
+    <li class="timeline" data-animate="fadeInDown" data-delay="5">
+      <div class="timeline-badge warning"><i class="icon-clock"></i></div>
       <div class="timeline-panel">
         <div class="timeline-heading">
           <h4 class="timeline-title">Gérer Mes Courses</h4>
-          <p><small class="text-muted"><i class="far fa-clock"></i> SOON TM</small> <br>
+          <p><small class="text-muted"><i class="icon-clock"></i> SOON TM</small> <br>
           <span class="badge badge-info">Kotlin</span> <span class="badge badge-info">C#</span> </p>
         </div>
         <div class="timeline-body">
@@ -40,12 +93,12 @@
       </div>
     </li>
 	  
-    <li class="timeline-inverted">
-      <div class="timeline-badge success"><i class="fas fa-check"></i></div>
+    <li class="timeline-inverted" data-animate="fadeInDown" data-delay="5">
+      <div class="timeline-badge success"><i class="icon-check"></i></div>
       <div class="timeline-panel">
         <div class="timeline-heading">
           <h4 class="timeline-title">Portfolio</h4>
-          <p><small class="text-muted"><i class="far fa-clock"></i> 03/12/2020</small> <br>
+          <p><small class="text-muted"><i class="icon-clock"></i> 03/12/2020</small> <br>
           <span class="badge badge-info">HTML</span> <span class="badge badge-info">CSS</span> </p>
         </div>
         <div class="timeline-body">
@@ -53,17 +106,17 @@
         </div>
         <hr>
         <div class="btn-group"> <a href="https://github.com/Helldwin/quentinhelayel.github.io">
-          <button type="button" class="btn btn-primary btn-sm"> <i class="fas fa-eye"></i> <span class="caret">Accéder au github du projet</span> </button>
+          <button type="button" class="btn btn-primary btn-sm"> <i class="icon-eye"></i> <span class="caret">Accéder au github du projet</span> </button>
         </a> </div>
       </div>
     </li>
 	  
-    <li class="timeline">
-      <div class="timeline-badge success"><i class="fas fa-check"></i></div>
+    <li class="timeline" data-animate="fadeInDown" data-delay="5">
+      <div class="timeline-badge success"><i class="icon-check"></i></div>
       <div class="timeline-panel">
         <div class="timeline-heading">
           <h4 class="timeline-title">EcostaffDactyloSender</h4>
-          <p><small class="text-muted"><i class="far fa-clock"></i> 26/06/2020</small> <br>
+          <p><small class="text-muted"><i class="icon-clock"></i> 26/06/2020</small> <br>
           <span class="badge badge-info">C# UWP</span> </p>
         </div>
         <div class="timeline-body">
@@ -75,12 +128,12 @@
         </div>
       </div>
     </li>
-	  <li class="timeline-inverted">
-      <div class="timeline-badge success"><i class="fas fa-check"></i></div>
+	  <li class="timeline-inverted" data-animate="fadeInDown" data-delay="5">
+      <div class="timeline-badge success"><i class="icon-check"></i></div>
       <div class="timeline-panel">
         <div class="timeline-heading">
           <h4 class="timeline-title">Waapi&nbsp;</h4>
-          <p><small class="text-muted"><i class="far fa-clock"></i> 29/03/2019</small> <br>
+          <p><small class="text-muted"><i class="icon-clock"></i> 29/03/2019</small> <br>
           <span class="badge badge-info">PHP</span> <span class="badge badge-info">Symfony</span> <span class="badge badge-info">Angular CLI</span> </p>
         </div>
         <div class="timeline-body">
@@ -93,12 +146,12 @@
       </div>
     </li>
 	  
-    <li class="timeline">
-      <div class="timeline-badge success"><i class="fas fa-check"></i></div>
+    <li class="timeline" data-animate="fadeInDown" data-delay="5">
+      <div class="timeline-badge success"><i class="icon-check"></i></div>
       <div class="timeline-panel">
         <div class="timeline-heading">
           <h4 class="timeline-title">Boutique en Ligne Karaté&nbsp;</h4>
-          <p><small class="text-muted"><i class="far fa-clock"></i> 12/11/2019</small> <br>
+          <p><small class="text-muted"><i class="icon-clock"></i> 12/11/2019</small> <br>
           <span class="badge badge-info">PHP MVC</span> <span class="badge badge-info">JavaScript</span> </p>
         </div>
         <div class="timeline-body">
@@ -111,12 +164,12 @@
       </div>
     </li>
 	  
-	  <li class="timeline">
-      <div class="timeline-badge success"><i class="fas fa-check"></i></div>
+	  <li class="timeline" data-animate="fadeInDown" data-delay="5">
+      <div class="timeline-badge success"><i class="icon-check"></i></div>
       <div class="timeline-panel">
         <div class="timeline-heading">
           <h4 class="timeline-title">Gestion Karaté&nbsp;</h4>
-          <p><small class="text-muted"><i class="far fa-clock"></i> 12/11/2019</small> <br>
+          <p><small class="text-muted"><i class="icon-clock"></i> 12/11/2019</small> <br>
           <span class="badge badge-info">C#</span> <span class="badge badge-info">Entity Framework</span> <span class="badge badge-info">SQL</span> </p>
         </div>
         <div class="timeline-body">
@@ -129,12 +182,12 @@
       </div>
     </li>
 	  
-    <li class="timeline-inverted">
-      <div class="timeline-badge success"><i class="fas fa-check"></i></div>
+    <li class="timeline-inverted" data-animate="fadeInDown" data-delay="5">
+      <div class="timeline-badge success"><i class="icon-check"></i></div>
       <div class="timeline-panel">
         <div class="timeline-heading">
           <h4 class="timeline-title">Random 3000&nbsp;</h4>
-          <p><small class="text-muted"><i class="far fa-clock"></i> 15/12/2018</small> <br>
+          <p><small class="text-muted"><i class="icon-clock"></i> 15/12/2018</small> <br>
             <span class="badge badge-info">C#</span> </p>
         </div>
         <div class="timeline-body">
@@ -142,17 +195,17 @@
         </div>
         <hr>
         <div class="btn-group"> <a href="https://github.com/Helldwin/-FR-Random-3000">
-          <button type="button" class="btn btn-primary btn-sm"> <i class="fas fa-eye"></i> <span class="caret">Accéder au github du projet</span> </button>
+          <button type="button" class="btn btn-primary btn-sm"> <i class="icon-eye"></i> <span class="caret">Accéder au github du projet</span> </button>
         </a> </div>
       </div>
     </li>
 	  
-    <li class="timeline">
-      <div class="timeline-badge success"><i class="fas fa-check"></i></div>
+    <li class="timeline" data-animate="fadeInDown" data-delay="5">
+      <div class="timeline-badge success"><i class="icon-check"></i></div>
       <div class="timeline-panel">
         <div class="timeline-heading">
           <h4 class="timeline-title">Estimer Mon Bien&nbsp;</h4>
-          <p><small class="text-muted"><i class="far fa-clock"></i> 29/06/2018</small> <br>
+          <p><small class="text-muted"><i class="icon-clock"></i> 29/06/2018</small> <br>
           <span class="badge badge-info">C# Windows Forms</span> </p>
         </div>
         <div class="timeline-body">
@@ -165,12 +218,12 @@
       </div>
     </li>
 	
-	<li class="timeline-inverted">
-      <div class="timeline-badge success"><i class="fas fa-check"></i></div>
+	<li class="timeline-inverted" data-animate="fadeInDown" data-delay="5">
+      <div class="timeline-badge success"><i class="icon-check"></i></div>
       <div class="timeline-panel">
         <div class="timeline-heading">
           <h4 class="timeline-title">Mastermind</h4>
-          <p><small class="text-muted"><i class="far fa-clock"></i> 16/02/2018</small> <br>
+          <p><small class="text-muted"><i class="icon-clock"></i> 16/02/2018</small> <br>
           <span class="badge badge-info">C# Windows Forms</span> </p>
         </div>
         <div class="timeline-body">
@@ -184,8 +237,45 @@
     </li>
   </ul>
 </div>
-<script src="js/jquery-3.4.1.min.js"></script> 
-<script src="js/popper.min.js"></script> 
-<script src="js/bootstrap-4.4.1.js"></script>
+</div> 
+
+
+    </div>
+  </section>
+  <!-- #content end -->
+  
+  <footer> 
+    <!-- Copyrights
+              ============================================= -->
+    <div id="copyrights">
+      <div class="container">
+        <div class="row col-mb-30">
+          <div class="col-md-6 text-center text-md-left"> Copyrights &copy; 2020 Tout droits réservés par Quentin HELAYEL.<br>
+          </div>
+          <div class="col-md-6 text-center text-md-right">
+            <div class="clear"></div>
+            <i class="icon-envelope2"></i> quentin.helayel@laposte.net <span class="middot">&middot;</span> <i class="icon-phone1"></i> +33 7 71 07 25 48 </div>
+        </div>
+      </div>
+    </div>
+    <!-- #copyrights end --> 
+  </footer>
+  <!-- #footer end --> 
+  
+</div>
+<!-- #wrapper end --> 
+
+<!-- Go To Top
+      ============================================= -->
+<div id="gotoTop" class="icon-angle-up"></div>
+
+<!-- JavaScripts
+      ============================================= --> 
+<script src="js/jquery.js"></script> 
+<script src="js/plugins.min.js"></script> 
+
+<!-- Footer Scripts
+      ============================================= --> 
+<script src="js/functions.js"></script>
 </body>
 </html>
