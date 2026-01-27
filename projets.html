@@ -87,364 +87,257 @@
     <section id="content">
       <div class="content-wrap">
         <div class="container">
-          <div class="page-header">
-            <h1 class="center" id="timeline">Mes Projets</h1>
-            <div class="divider divider-rounded divider-center"><i class="icon-pen"></i></div>
 
-            <ul class="timeline">
+          <div class="heading-block center border-bottom-0">
+            <h1 class="nott ls0">Portfolio Projets</h1>
+            <span>Une rétrospective de mes développements, du mobile au desktop.</span>
+          </div>
 
-              <li class="timeline-inverted" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge warning"><i class="icon-clock"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Site internet - 2GETHER V.2</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 06/10/2022</small> <br>
-                      <span class="badge badge-info">Astro</span> <span class="badge badge-info">Vue</span> <span
-                        class="badge badge-info">Svelte</span> <span class="badge badge-info">TypeScript</span> <span
-                        class="badge badge-info">JavaScript</span>
-                    </p>
+          <ul class="grid-filter style-2 justify-content-center" data-container="#portfolio">
+            <li class="activeFilter"><a href="#" data-filter="*">Tous</a></li>
+            <li><a href="#" data-filter=".pf-mobile">Mobile / MAUI</a></li>
+            <li><a href="#" data-filter=".pf-dotnet">.NET & C#</a></li>
+            <li><a href="#" data-filter=".pf-web">Web / JS</a></li>
+            <li><a href="#" data-filter=".pf-classic">VB / Classic</a></li>
+          </ul>
+
+          <div id="portfolio" class="portfolio row grid-container gutter-30">
+
+            <article class="portfolio-item col-md-4 col-sm-6 pf-mobile pf-dotnet">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <div class="d-flex justify-content-between mb-2">
+                    <span class="badge badge-danger">Actuel</span>
+                    <span class="text-muted small"><i class="icon-calendar-alt"></i> 08/2025</span>
                   </div>
-                  <div class="timeline-body">
-                    <p>Refonte totale du site 2GETHER avec de nouvelles fonctionnalités et une meilleure ergonomie&nbsp;
-                    </p>
+                  <h3>Pégase</h3>
+                  <p>Version mobile simplifiée du PGI pour douchettes Zebra (Android).</p>
+                  <div class="tagcloud">
+                    <a href="#">C#</a> <a href="#">.NET MAUI</a>
                   </div>
                 </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">LVNET2021 FW</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 2022</small> <br>
-                      <span class="badge badge-info">C# Blazor</span>
-                    </p>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Nouvelle version du logiciel de gestion de flotte de véhicules et contrôle de consommations de
-                      carburants&nbsp;</p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-web">
+              <div class="grid-inner shadow-sm card h-100 border-top border-primary"
+                style="border-top-width: 3px !important;">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 2025</span>
+                  <h3>IRIS (Plateforme JDR)</h3>
+                  <p>Système de masterisation en temps réel avec gestion de quêtes et PV.</p>
+                  <div class="tagcloud">
+                    <a href="#">TypeScript</a> <a href="#">Docker</a> <a href="#">Shell</a>
                   </div>
                 </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline-inverted" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge danger"><i class="icon-line-cross"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">PointageApp</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 02/07/2021</small> <br>
-                      <span class="badge badge-info">C# WPF</span>
-                    </p>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Logiciel de pointage utilisé dans le cadre des pointages d'entrée et sortie d'un centre
-                      pénitentiaire&nbsp;</p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-classic pf-dotnet">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 10/2023</span>
+                  <h3>PGI WMS</h3>
+                  <p>Gestion médicale complète : stock, dossier patient et ordonnances.</p>
+                  <div class="tagcloud">
+                    <a href="#">VB.NET</a> <a href="#">XAML</a>
                   </div>
                 </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">SynchroPRODEVAL</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 29/06/2021</small> <br>
-                      <span class="badge badge-info">C#</span>
-                    </p>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Logiciel d'export d'opérations et identifiants CEC d'LVNET vers le serveur Mobigreen&nbsp;</p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-dotnet">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 2023</span>
+                  <h3>Marvel TVA App</h3>
+                  <p>Interface interactive inspirée de Loki pour visualiser la timeline du MCU.</p>
+                  <div class="tagcloud">
+                    <a href="#">C# WPF</a>
                   </div>
                 </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline-inverted" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">WFS Integration</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 22/06/2021</small> <br>
-                      <span class="badge badge-info">VB.NET</span>
-                    </p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-web">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 06/10/2022</span>
+                  <h3>2GETHER V.2</h3>
+                  <p>Refonte totale du site associatif avec architecture moderne.</p>
+                  <div class="tagcloud mb-3">
+                    <a href="#">Astro</a> <a href="#">Vue</a> <a href="#">Svelte</a>
                   </div>
-                  <div class="timeline-body">
-                    <p>Logiciel d'import vers LVNET d'identifiants, de sociétés, et calcul du taux de taxes pour WFS
-                      (Worldwide Flight Services)&nbsp;</p>
+                  <a href="https://github.com/2gether-asso/2gether-asso.fr"
+                    class="button button-mini button-rounded button-black m-0"><i class="icon-github"></i> GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-item col-md-4 col-sm-6 pf-dotnet pf-web">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 2022</span>
+                  <h3>LVNET2021 FW</h3>
+                  <p>Gestion de flotte de véhicules et suivi des consommations de carburant.</p>
+                  <div class="tagcloud">
+                    <a href="#">C# Blazor</a>
                   </div>
                 </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">AppelAuto</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 27/04/2021</small> <br>
-                      <span class="badge badge-info">VB</span> <span class="badge badge-info">VB.NET</span>
-                    </p>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Logiciel réalisant des appels cycliques pour communiquer avec les différentes applications ALX et
-                      les automates&nbsp;</p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-dotnet">
+              <div class="grid-inner shadow-sm card h-100 border-left border-danger"
+                style="border-left-width: 4px !important;">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 02/07/2021</span>
+                  <h3>PointageApp</h3>
+                  <p>Outil de gestion des flux d'entrées/sorties en milieu pénitentiaire.</p>
+                  <div class="tagcloud">
+                    <a href="#">C# WPF</a>
                   </div>
                 </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline-inverted" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">ExportMail ALX</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 27/04/2021</small> <br>
-                      <span class="badge badge-info">VB.NET</span>
-                    </p>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Outil externe d'export de mail d'LV8&nbsp;</p>
-                  </div>
-              </li>
-
-              <li class="timeline" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">LVNET2005/LVNET2021</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 18/03/2021</small> <br>
-                      <span class="badge badge-info">VB.NET Silverlight</span> <span class="badge badge-info">VB.NET
-                        WPF</span>
-                    </p>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Logiciel de gestion de flotte de véhicules et contrôle de consommations de carburants&nbsp;</p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-dotnet">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 29/06/2021</span>
+                  <h3>SynchroPRODEVAL</h3>
+                  <p>Synchronisation et export d'opérations vers serveurs Mobigreen.</p>
+                  <div class="tagcloud">
+                    <a href="#">C#</a>
                   </div>
                 </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline-inverted" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">ClientFTP</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 17/03/2021</small> <br>
-                      <span class="badge badge-info">C#</span>
-                    </p>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Client FTP permettant de communiquer en FTP, SFTP et FTPS</p>
-                  </div>
-              </li>
-
-              <li class="timeline" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Gérer Mes Courses</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 02/01/2021</small> <br>
-                      <span class="badge badge-info">C#</span>
-                    </p>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Application pour gérer ses courses au quotidien, de la génération de la liste au stock présent
-                      dans sa maison&nbsp;</p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-classic">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 22/06/2021</span>
+                  <h3>WFS Integration</h3>
+                  <p>Import de données et calcul de taxes pour Worldwide Flight Services.</p>
+                  <div class="tagcloud">
+                    <a href="#">VB.NET</a>
                   </div>
                 </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline-inverted" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Site internet - 2GETHER</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 23/12/2020</small> <br>
-                      <span class="badge badge-info">HTML</span> <span class="badge badge-info">CSS</span> <span
-                        class="badge badge-info">SCSS</span>
-                      <span class="badge badge-info">JavaScript</span>
-                    </p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-classic">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 27/04/2021</span>
+                  <h3>AppelAuto</h3>
+                  <p>Communication cyclique entre applications ALX et automates industriels.</p>
+                  <div class="tagcloud">
+                    <a href="#">VB.NET</a>
                   </div>
-                  <div class="timeline-body">
-                    <p>Site web présentant la communauté et association 2GETHER</p>
-                  </div>
-                  <hr>
-                  <div class="btn-group"> <a href="https://github.com/2gether-asso/2gether-asso.fr">
-                      <button type="button" class="btn btn-primary btn-sm"> <i class="icon-eye"></i> <span
-                          class="caret">Accéder au github du projet</span> </button>
-                    </a> </div>
                 </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Portfolio</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 03/12/2020</small> <br>
-                      <span class="badge badge-info">HTML</span> <span class="badge badge-info">CSS</span>
-                    </p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-dotnet">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 17/03/2021</span>
+                  <h3>ClientFTP</h3>
+                  <p>Gestionnaire de transferts sécurisés (FTP, SFTP, FTPS).</p>
+                  <div class="tagcloud">
+                    <a href="#">C#</a>
                   </div>
-                  <div class="timeline-body">
-                    <p>Site web présentant mon parcours ainsi que les différents projets réalisés tout au long de ma
-                      carrière de développeur</p>
-                  </div>
-                  <hr>
-                  <div class="btn-group"> <a href="https://github.com/Helldwin/quentinhelayel.github.io">
-                      <button type="button" class="btn btn-primary btn-sm"> <i class="icon-eye"></i> <span
-                          class="caret">Accéder au github du projet</span> </button>
-                    </a> </div>
                 </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline-inverted" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">EcostaffDactyloSender</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 26/06/2020</small> <br>
-                      <span class="badge badge-info">C# UWP</span>
-                    </p>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Application permettant d'envoyer ses audios directement au service d'ÉcoStaff pour
-                      retranscription textuelle en sélectionnant la date de rendu et le modèle voulu.</p>
-                  </div>
-                  <hr>
-                  <div class="btn-group">
-                    <p><em class="text-muted">Application réalisée dans le cadre d'un stage en lien avec les études</em>
-                    </p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-dotnet">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 2021</span>
+                  <h3>Gérer Mes Courses</h3>
+                  <p>Application de gestion de stock domestique et listes de courses.</p>
+                  <div class="tagcloud">
+                    <a href="#">C#</a>
                   </div>
                 </div>
-              </li>
-              <li class="timeline" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Waapi&nbsp;</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 29/03/2019</small> <br>
-                      <span class="badge badge-info">PHP</span> <span class="badge badge-info">Symfony</span> <span
-                        class="badge badge-info">Angular CLI</span>
-                    </p>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Application d'e-conciergerie, permettant de regrouper toutes les activités à côté de sa
-                      réservation en utilisation datatourisme, de promouvoir des activités, des campings</p>
-                  </div>
-                  <hr>
-                  <div class="btn-group">
-                    <p><em class="text-muted">Application réalisée dans le cadre d'un stage en lien avec les études</em>
-                    </p>
-                  </div>
-                </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline-inverted" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Boutique en Ligne Karaté&nbsp;</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 12/11/2019</small> <br>
-                      <span class="badge badge-info">PHP MVC</span> <span class="badge badge-info">JavaScript</span>
-                    </p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-web">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 12/2020</span>
+                  <h3>Portfolio V1</h3>
+                  <p>Présentation du parcours et des projets personnels.</p>
+                  <div class="tagcloud mb-3">
+                    <a href="#">HTML/CSS</a>
                   </div>
-                  <div class="timeline-body">
-                    <p>Front end &amp; Back end d'une Boutique en ligne permettant d'acheter différents produits en lien
-                      avec le club de karaté et de gérer les stocks&nbsp;&nbsp;</p>
-                  </div>
-                  <hr>
-                  <div class="btn-group">
-                    <p><em class="text-muted">Application réalisée dans le cadre du BTS SIO</em></p>
-                  </div>
+                  <a href="https://github.com/Helldwin/quentinhelayel.github.io"
+                    class="button button-mini button-rounded button-black m-0"><i class="icon-github"></i> GitHub</a>
                 </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline-inverted" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Gestion Karaté&nbsp;</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 12/11/2019</small> <br>
-                      <span class="badge badge-info">C#</span> <span class="badge badge-info">Entity Framework</span>
-                      <span class="badge badge-info">SQL</span>
-                    </p>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Application de Gestion pour des clubs de Karaté, gérant les différents inscrits et ayant un mode
-                      compétition permetant de gérer les feuilles de résultats&nbsp; &nbsp;</p>
-                  </div>
-                  <hr>
-                  <div class="btn-group">
-                    <p><em class="text-muted">Application réalisée dans le cadre du BTS SIO</em></p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-dotnet">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 06/2020</span>
+                  <h3>EcostaffDactyloSender</h3>
+                  <p>Envoi sécurisé d'audios pour retranscription (Stage).</p>
+                  <div class="tagcloud">
+                    <a href="#">C# UWP</a>
                   </div>
                 </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Random 3000&nbsp;</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 15/12/2018</small> <br>
-                      <span class="badge badge-info">C#</span>
-                    </p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-web">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 03/2019</span>
+                  <h3>Waapi (e-conciergerie)</h3>
+                  <p>Agrégateur d'activités touristiques et gestion de réservations (Stage).</p>
+                  <div class="tagcloud">
+                    <a href="#">Symfony</a> <a href="#">Angular</a>
                   </div>
-                  <div class="timeline-body">
-                    <p>Application de tirage au sort basique utilisant ou non un fichier texte pour pré-remplir la liste
-                      de participants</p>
-                  </div>
-                  <hr>
-                  <div class="btn-group"> <a href="https://github.com/Helldwin/-FR-Random-3000">
-                      <button type="button" class="btn btn-primary btn-sm"> <i class="icon-eye"></i> <span
-                          class="caret">Accéder au github du projet</span> </button>
-                    </a> </div>
                 </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline-inverted" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Estimer Mon Bien&nbsp;</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 29/06/2018</small> <br>
-                      <span class="badge badge-info">C# Windows Forms</span>
-                    </p>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Application interne pour estimer les biens (appartements, villa, terrain) en fonction de sa
-                      localité et son nombre de m²</p>
-                  </div>
-                  <hr>
-                  <div class="btn-group">
-                    <p><em class="text-muted">Application réalisée dans le cadre d'un stage en lien avec les études</em>
-                    </p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-dotnet">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 06/2018</span>
+                  <h3>Estimer Mon Bien</h3>
+                  <p>Outil d'estimation immobilière basé sur la localité et la surface.</p>
+                  <div class="tagcloud">
+                    <a href="#">C# WinForms</a>
                   </div>
                 </div>
-              </li>
+              </div>
+            </article>
 
-              <li class="timeline" data-animate="fadeInDown" data-delay="5">
-                <div class="timeline-badge success"><i class="icon-check"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Mastermind</h4>
-                    <p><small class="text-muted"><i class="icon-clock"></i> 16/02/2018</small> <br>
-                      <span class="badge badge-info">C# Windows Forms</span>
-                    </p>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Application reprenant les règles du célèbre jeu Mastermind,&nbsp;</p>
-                  </div>
-                  <hr>
-                  <div class="btn-group">
-                    <p><em class="text-muted">Application réalisée dans le cadre du BTS SIO</em></p>
+            <article class="portfolio-item col-md-4 col-sm-6 pf-dotnet">
+              <div class="grid-inner shadow-sm card h-100">
+                <div class="portfolio-desc p-4">
+                  <span class="text-muted small mb-2 d-block"><i class="icon-calendar-alt"></i> 16/02/2018</span>
+                  <h3>Mastermind</h3>
+                  <p>Application reprenant les règles du célèbre jeu Mastermind, réalisée dans le cadre du BTS SIO</p>
+                  <div class="tagcloud">
+                    <a href="#">C# WinForms</a>
                   </div>
                 </div>
-              </li>
-            </ul>
+              </div>
+            </article>
+
           </div>
         </div>
-
-
       </div>
     </section>
     <!-- #content end -->
-
     <footer>
       <!-- Copyrights
               ============================================= -->

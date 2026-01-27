@@ -1,8 +1,121 @@
-/* ----------------------------------------------------------------
-	Custom CSS
+/* Style de la Timeline */
+.timeline-container {
+	position: relative;
+	padding-left: 40px;
+	margin: 40px 0;
+	border-left: 2px solid #EEE;
+}
 
-	Add all your Custom Styled CSS here for New Styles or
-	Overwriting Default Theme Styles for Better Handling Updates
------------------------------------------------------------------*/
+.timeline-item {
+	position: relative;
+	margin-bottom: 40px;
+}
 
+.timeline-item:last-child {
+	margin-bottom: 0;
+}
 
+.timeline-badge {
+	position: absolute;
+	left: -53px;
+	/* Centre le badge sur la ligne */
+	top: 15px;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFF;
+	font-size: 10px;
+	z-index: 1;
+}
+
+.timeline-content {
+	transition: transform 0.3s ease;
+	border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.timeline-content:hover {
+	transform: translateX(10px);
+	border-color: #333 !important;
+}
+
+/* Ajustements typographiques */
+.text-smaller {
+	font-size: 0.9rem;
+}
+
+.border-left-info {
+	border-left: 4px solid #17a2b8 !important;
+}
+
+.custom-card {
+	transition: all 0.3s ease;
+	border-radius: 12px !important;
+	background-color: #fff;
+}
+
+.custom-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1) !important;
+}
+
+.i-rounded.i-small {
+	width: 50px !important;
+	height: 50px !important;
+	line-height: 50px !important;
+	font-size: 20px !important;
+	margin-bottom: 20px;
+}
+
+/* Couleur personnalisée pour le Primary si tu veux sortir du bleu classique */
+.bg-primary.color {
+	background-color: #333 !important;
+	/* Noir élégant ou garde le bleu */
+	color: #fff !important;
+}
+
+/* Amélioration des cartes de projet */
+.portfolio-item .grid-inner {
+	background-color: #FFF;
+	border-radius: 10px;
+	transition: all .3s ease;
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	height: 100%;
+}
+
+.portfolio-item:hover .grid-inner {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.portfolio-desc h3 {
+	font-size: 1.25rem;
+	margin-bottom: 10px;
+	font-weight: 700;
+	color: #333;
+}
+
+.portfolio-desc p {
+	font-size: 0.9rem;
+	color: #666;
+	line-height: 1.5;
+}
+
+/* Style des Tags/Badges */
+.tagcloud a {
+	font-size: 11px !important;
+	padding: 2px 8px !important;
+	border-radius: 4px !important;
+	background-color: #f1f4f9;
+	color: #555;
+	border: none !important;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.grid-filter.style-2 li a {
+	border-radius: 20px;
+	padding: 6px 20px;
+}
